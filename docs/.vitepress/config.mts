@@ -3,13 +3,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
-  title: 'greenbook',
-  description: "The (very unofficial) guide to CU ANES residency",
+  title: 'jit-anes',
+  description: "Description",
 
   head: [['link', { rel: 'icon', href: '/greek-gamma.svg' }]],
 
   sitemap: {
-    hostname: 'https://gb.cugammadex.com/',
+    hostname: 'https://jit.cugammadex.com/',
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }
@@ -23,18 +23,13 @@ export default defineConfig({
   themeConfig: {
     logo: '/greek-gamma.svg',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/elijahc/cugammadex' }
+      { icon: 'github', link: 'https://github.com/elijahc/jit-anes' }
     ],
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Rotations',
         items: [
           { text: "All rotations", link: '/r'},
-          { text: "CT Anes", link: '/r/ct' },
-          { text: "OB Anes", link: '/r/ob'},
-          { text: "Txp Anes", link: '/r/txp'},
-	        { text: "CTICU", link: '/r/cticu'},
-          { text: "NORA", link: '/r/nora'},
         ]}
     ],
 
@@ -57,31 +52,6 @@ export default defineConfig({
             { text: 'NORA', link: '/r/nora'},
             { text: 'OB', link: '/r/ob'},
             { text: 'Transplant', link: '/r/txp'}
-          ]
-        }
-      ],
-      '/r/': [
-        {
-          text: 'General OR Rotations',
-          items: [
-            { text: "VA Hospital", link: '/r/va' },
-	        { text: "UCH", link: '/r/uch' },
-            { text: "Denver Health", link: '/r/dh'},
-          ]
-        },{
-          text: 'Subspecialties',
-          items: [
-            { text: "OB Anes", link: '/r/ob'},
-            { text: "Transplant Anes", link: '/r/txp'},
-            { text: "CT Anes", link: '/r/ct' },
-            { text: "Neuroanesthesia", link: '/r/neuro' },
-            { text: "Pediatric Anes", link: '/r/chco'},
-          ]
-        },{
-          text: 'ICU Rotations',
-          items: [
-            { text: "STICU", link: '/r/sticu'},
-            { text: "CTICU", link: '/r/cticu'},
           ]
         }
       ]
