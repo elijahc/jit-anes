@@ -3,28 +3,16 @@
 layout: home
 
 hero:
-  name: "greenbook"
-  text: "CU ANES Green Book"
-  tagline: The (very unofficial) guide to CU Anesthesiology residency
+  name: "Title"
+  text: "Subtitle"
+  tagline: "Tagline"
   actions:
     - theme: brand
       text: Rotations
       link: /r/
-    - theme: brand
-      text: Rx Reference
-      link: https://hackmd.io/@elijahc/anes-rx
     - theme: alt
       text: QGenda glossary
       link: /supplemental/qgenda-glossary
-    - theme: alt
-      text: PGY-1
-      link: /supplemental/interns
-    - theme: alt
-      text: contacts
-      link: /supplemental/contacts
-    - theme: alt
-      text: links
-      link: /supplemental/links
 ---
 
 [[TOC]]
